@@ -12,7 +12,7 @@ class LoginPage:
 
     def login(self, username, password):
         self.username_input.fill(username)
-        self.password__input.fill(password)
+        self.password_input.fill(password)
         self.login_button.click()
 
     def get_all_table_rows(self):
@@ -20,3 +20,4 @@ class LoginPage:
         table = self.page.get_by_role("row").all()
         for row in table[1:]:
             print(row)
+
